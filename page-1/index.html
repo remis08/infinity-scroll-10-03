@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page-1</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+
+<body>
+
+  <div id="container">
+    <div class="wrapper">
+
+<div class="pages">
+
+<h2>チョコレートプラネット「業者」</h2>
+<p>チョコレートプラネットが「業者」になり、ポテチの修理を行う様子を撮影したものです。修理の料金は、袋の破れが500円、中身の減りが2000円です。修理の際には、保険に加入することもできます。保険料は2000円です。</p>
+
+<div class="video-wrapper">
+<iframe  src="https://www.youtube.com/embed/UydyLvybRlU?si=0SlZUD0tWZ9OcOTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div><!-- /.video-wrapper -->
+
+
+</div><!-- /.pages -->
+</div><!-- /#wrapper -->
+ 
+<a href="../page-2/" id="next"> 次のページ</a>
+
+</div><!-- /#container -->
+
+<p class="to-top">
+  <a href="#top"><img src="img/to-top.svg" alt=""></a>
+</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+
+<script>
+//topページのリダイレクト
+setTimeout("redirect()", 0);
+function redirect(){
+    location.href='../index.html';
+}
+
+
+
+  $('#container').cleverInfiniteScroll({
+    contentsWrapperSelector: '#container',
+    contentSelector: '.wrapper',
+    nextSelector: '#next',
+  });
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf-8";
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* fv部分 */
+.fv{
+  min-height: 100vh;
+  padding: 0 10px 40px;
+}
+
+header{
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgb(255, 255, 188);
+}
+
+.main-visual{
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  margin: 40px auto;
+
+  img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+}
+
+.lead{
+ max-width: 600px;
+margin: 50px auto;
+line-height: 2;
+}
+
+.to-top{
+  width: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* 下層ページ */
+
+.pages{
+  color: #333;
+  min-height: 120vh;
+  text-align: center;
+  background-color: rgb(253, 253, 200);
+  
+  
+
+  >h2{
+   background-color: #d8ffd9;
+    padding: 40px;
+    margin-bottom: 20px;
+
+  }
+
+  >p{
+    max-width: 600px;
+    margin: 0 auto 18px;
+    padding: 0 25px;
+    
+  }
+}
+
+
+
+
+
+.video-wrapper{
+  margin: 0 auto;
+  width: 60%;
+  aspect-ratio: 16/9;
+
+  >iframe{
+    height: 100%;
+    width: 100%;
+  }
+}

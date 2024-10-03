@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page-2</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+
+<body>
+
+  <div id="container">
+    <div class="wrapper">
+
+<div class="pages">
+
+<h2>貫禄ありすぎて、父親と間違われる引きこもり生徒【ジェラードン】</h2>
+<p>引きこもりの生徒を訪ねる教師についてです。教師は生徒の安否を心配し、学校に戻るように説得しようとします。生徒は嫌々ながらも最終的に教師と学校で会うことに同意します。</p>
+
+<div class="video-wrapper">
+  <iframe  src="https://www.youtube.com/embed/OtJvFyqqeo0?si=ZHr_RDUyqHoup9uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div><!-- /.video-wrapper -->
+
+
+</div><!-- /.pages -->
+</div><!-- /#wrapper -->
+ 
+<a href="../page-3/" id="next"> 次のページ</a>
+
+</div><!-- /#container -->
+
+<p class="to-top">
+  <a href="#top"><img src="img/to-top.svg" alt=""></a>
+</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="js/jquery.clever-infinite-scroll.js"></script>
+
+<script>
+
+  //topページのリダイレクト
+setTimeout("redirect()", 0);
+function redirect(){
+    location.href='../index.html';
+}
+
+  $('#container').cleverInfiniteScroll({
+    contentsWrapperSelector: '#container',
+    contentSelector: '.wrapper',
+    nextSelector: '#next',
+  });
+
+  
+</script>
+
+
+
+</body>
+</html>
